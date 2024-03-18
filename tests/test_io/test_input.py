@@ -5,7 +5,7 @@ from os.path import exists
 from app.io.input import read_file, read_file_pandas
 
 
-class TestFileReading():
+class TestFileReading:
     def test_read_file_non_existent(self):
         with pytest.raises(FileNotFoundError):
             read_file("non_existent_file.txt")
